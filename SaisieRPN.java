@@ -24,7 +24,7 @@ public class SaisieRPN {
 		do{
 			this.saisie=rep.nextLine();
 			if(!this.saisie.equals("exit")){
-				UseMoteur();
+					UseMoteur();
 			}
 		}while(!this.saisie.equals("exit"));
 		
@@ -80,9 +80,10 @@ public class SaisieRPN {
 	 */
     public void affichage(String saisi){
     	System.out.print("L'expression courante est:\t");
-    	for(int i=0;i< Moteur.pile.size();i++){
-    		System.out.print(Moteur.pile.elementAt(i)+"\t");
-    	}
+    	if(!Moteur.pile.isEmpty())
+    		for(int i=0;i< Moteur.pile.size();i++){
+    			System.out.print(Moteur.pile.elementAt(i)+"\t");
+    		}
     }	
 
 }

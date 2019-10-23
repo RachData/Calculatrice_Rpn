@@ -60,17 +60,12 @@ public class MoteurRPN
     	catch( ManqueOperandeException e1 ){
     		this.enregistrer(a);
 		}
-		catch(PilevideException e2){
-			this.enregistrer(a);
-		}
         return 0;
      }
 
     public double depiler() throws PilevideException, ManqueOperandeException{
     	if(this.pile.isEmpty())
     		throw new PilevideException() ;
-    	/*if(this.pile.size()==1)
-    		throw new ManqueOperandeException() ;*/
     	else
     	{
     		return pile.pop();
