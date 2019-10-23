@@ -28,7 +28,6 @@ public class MoteurRPN
 	 * pour effectuer l'operation
 	 */
     public double apply  (char symbole) throws ClasseException, PilevideException,ManqueOperandeException
-    //public void apply  (char symbole) throws ClasseException, PilevideException,ManqueOperandeException
      {
     	double a=0,b = 0;
     	try{
@@ -39,7 +38,7 @@ public class MoteurRPN
 			 {
 			    case '+': 
 			        this.enregistrer(Operation.PLUS.eval(b, a));
-			        return Operation.PLUS.eval(b, a);
+		         return Operation.PLUS.eval(b, a);
 			         
 			    case '*':
 			    	this.enregistrer(Operation.MULT.eval(b, a));
@@ -60,14 +59,20 @@ public class MoteurRPN
 		}
     	catch( ManqueOperandeException e1 ){
     		this.enregistrer(a);
-		};
-         return 0;
+		}
+		catch(PilevideException e2){
+			this.enregistrer(a);
+		}
+        return 0;
      }
 
     public double depiler() throws PilevideException, ManqueOperandeException{
-    	if(this.pile.isEmpty()){
-    		throw new ManqueOperandeException() ;
-    	}else{
+    	if(this.pile.isEmpty())
+    		throw new PilevideException() ;
+    	/*if(this.pile.size()==1)
+    		throw new ManqueOperandeException() ;*/
+    	else
+    	{
     		return pile.pop();
     	}
 	
