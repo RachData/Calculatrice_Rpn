@@ -46,10 +46,10 @@ public class OperationTest {
     /**
      * je teste ma fonction eval avec la division 
      */
-    @Test
+   @Test
     public void testEval() throws Exception 
     {
-        System.out.println("Test fonction eval");
+        System.out.println("Test fonction eval.division");
         double operande1 = 8;
         double operande2 = 0;
         Operation monOperation = Operation.DIV;
@@ -58,6 +58,6 @@ public class OperationTest {
         assertEquals(resultat_attendue, result, 2);
         //assertEquals(expResult, result, result);
         
-    }
+    }     
     }
     
