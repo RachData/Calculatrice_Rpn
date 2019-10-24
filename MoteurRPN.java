@@ -1,11 +1,12 @@
-import Exceptions.*;
+package Dossier_Rach.Calculatrice_Rpn;
+import Dossier_Rach.Calculatrice_Rpn.Exceptions;
 
 import java.util.Stack;
 
 public class MoteurRPN 
 {
 	/**
-	 * La Pile qui va stockée les operandes
+	 * La Pile qui va stockï¿½e les operandes
 	 */
     public Stack <Double> pile =new Stack<>();
     
@@ -22,9 +23,9 @@ public class MoteurRPN
 	 * Methode charger d'effectuer les calcules en fontion de l'operateur recu
 	 * @param symbole : operateur saisie par l'utilisateur
 	 * @return Renvoie le Resultat de l'operation
-	 * @throws ClasseException : Exception qui gère la division par zero
-	 * @throws PilevideException : Exception qui gère si la pile est vide
-	 * @throws ManqueOperandeException : Exception qui gère le manque d'operande 
+	 * @throws ClasseException : Exception qui gï¿½re la division par zero
+	 * @throws PilevideException : Exception qui gï¿½re si la pile est vide
+	 * @throws ManqueOperandeException : Exception qui gï¿½re le manque d'operande 
 	 * pour effectuer l'operation
 	 */
     public double apply  (char symbole) throws ClasseException, PilevideException,ManqueOperandeException
@@ -72,9 +73,6 @@ public class MoteurRPN
     	}
 	
     }
-    
-
-   
-    
+       
 }
 

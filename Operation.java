@@ -1,4 +1,3 @@
-import Exceptions.*;
 
 public enum Operation {
 	
@@ -42,7 +41,7 @@ public enum Operation {
 	private char symbole;
 	/**
 	 * Initiale la classe
-	 * @param opera le symbole de l’opération
+	 * @param opera le symbole de lï¿½opï¿½ration
 	 */
 	Operation(char sym){
 		this.symbole=sym;

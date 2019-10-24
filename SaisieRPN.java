@@ -1,4 +1,3 @@
-import Exceptions.*;
 import java.util.Scanner;
 
 public class SaisieRPN {
@@ -13,9 +12,9 @@ public class SaisieRPN {
 	
 	/**
 	 * Fonction d'interaction avec l'utilisateur et qui invoque le Moteur RPN
-	 * @throws ClasseException : Exception qui gère la division par zero
-	 * @throws PilevideException : Exception qui gère la pilevide
-	 * @throws ManqueOperandeException : Exception qui gère le manque 
+	 * @throws ClasseException : Exception qui gï¿½re la division par zero
+	 * @throws PilevideException : Exception qui gï¿½re la pilevide
+	 * @throws ManqueOperandeException : Exception qui gï¿½re le manque 
 	 * d'oprande pour effectuer un calcul
 	 */
 	public void reception() throws ClasseException,PilevideException,ManqueOperandeException
@@ -50,9 +49,9 @@ public class SaisieRPN {
 	
 	/**
 	 * Methode qui s'ocuppe des operations necessaire en fonction de la saisie de l'utilisateur
-	 * @throws ClasseException : Exception qui gère la division par zero
+	 * @throws ClasseException : Exception qui gï¿½re la division par zero
 	 * @throws PilevideException
-	 * @throws ManqueOperandeException : Exception qui gère le manque
+	 * @throws ManqueOperandeException : Exception qui gï¿½re le manque
 	 * d'oprande pour effectuer un calcul
 	 */
 	private void UseMoteur() throws ClasseException,PilevideException,ManqueOperandeException{
